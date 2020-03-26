@@ -123,6 +123,12 @@ nav.vertical-menu li a{
 
 }
 
+
+
+.customize-img{
+    size: 50%;
+}
+
 .border-img{
     border-width: 1px;
     border-style: solid;
