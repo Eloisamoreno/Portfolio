@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+
+.wrap{
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+
+
+.home main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo-box{
+    align-items: center;
+    height: 100%;
+    position: fixed;
+
+}
+
+h1{
+    font-family: 'Anton';
+}
+
+.home h1{
+    font-size: 154px;
+    padding-left: 40px;
+    
+}
+
+
+
+.line{ 
+    background-color: black;
+    width: 600px;
+    height: 24px;
+    margin-left: 4%;
+}
+
+
+
+nav.vertical-menu {
+    height: 100%;
+    width: 72px;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    flex: none;
+    position: fixed;
+    margin-left: 620px;
+}
+
+nav.vertical-menu ul {
+    justify-content: center;
+    transform: rotate(270deg);
+}
+
+
+
+nav.vertical-menu li a{
+    font-family: anton;
+    font-size: 45px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+
+}
+
+
+
+.vertical-menu a{
+    background-color:none;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+
+
+.vertical-menu a.active {
+    color:black;
+}
+
+
+
+.gallery{
+    align-items: center;
+    justify-content: space-between;
+    width: 540px;
+    order: 1;
+    flex: none;
+}
+
+
+.spaceimg-gallery{
+    padding: 40px 0 40px 0;
+
+}
+
+
+
+.customize-img{
+    size: 50%;
+}
+
+
+
+.border-img{
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(189, 189, 189);
+    
+
+}
+
+
+
+.about-me{
+    position: fixed;
+    right: 0;
+    width:260px;
+    height: 183px;
+    order:3;
+    flex:1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:107px 85px 85px 225px;
+    line-height: 35px;
+    font-family:'Courier Prime';
+
+}
+
+.about-me div{
+    position: fixed;
+    right: 0;
+    width:260px;
+    height: 190px;
+    order:3;
+    flex:1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px dashed;
+    border-bottom: 2px dashed;
+    margin:247px 85px 85px 225px;
+    line-height: 35px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.quote{
+    padding: 0 0 24px 0;
+   
+}
+
+
+
+
+.about-me a {
+    list-style: none;
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+    background-color: #00ffff94;
+    
+}
+
+
+
+.about-me a:hover{
+    list-style: none;
+    font-size: 16px;
+    color:black;
+    text-decoration: underline;
+}
+
+
+.about-me p{
+    font-size: 20px;
+}
+
+
+.gallery-wrap{
+    margin-left: 345px;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+
+
+/* -----------estilos gráfico------------- */
+
+
+
+
+
+header{
+    padding: 0 40px;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+}
+
+header h1{
+    font-size: 70px;
+}
+
+header h1 a{
+    color: black;
+    height: 100%;
+    text-decoration: none;
+}
+
+header h3{
+    margin-left: 40px;
+}
+
+
+
+.line-header{ 
+    background-color: black;
+    width: 420px;
+    height: 24px;
+    margin: 0 0 0 40px;
+    flex: none;
+}
+
+.line-header2{
+    border-top: 7px dashed black;
+    width: 100%;
+    margin-left: 40px;
+
+}
+
+.tecno main{
+    padding: 170px 40px 0;
+}
+
+.tecno section{
+    justify-content: center;
+}
+
+h2{
+    font-family: 'Anton';
+    font-size: 40px;
+    padding: 0 0 0 40px;
+}
+
+
+.tex-tech{
+    padding: 25px 0;
+    font-family: 'Courier New', Courier, monospace;
+    width: 43%;
+    line-height: 22px;
+}
+
+section{
+    width: 1200px;
+
+}
+
+video{
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+
+/* --------estilos gráfico------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: fixed;
+    align-items: flex-end;
+    height: 80%;
+    display: flex;
+    padding-bottom: 30px;
+    font-family: 'Courier Prime';
+    font-size: 12px;
+    line-height: 16px;
+    bottom: 0;
+    width: 300px;
+    padding-left: 16px;
+}
+
+
+
+
+.desktop-screen{
+
+}
+
+.mobile-screen{
+
+
+}
+
+
+@media only screen and (max-width: 414px) {
+    .desktop-screen{
+        display: none;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 415px) {
+    .desktop-screen{
+        display: block;
+    }
+
+        .mobile-screen{
+            display: none;
+        }
+    
+}
+
+    
+
+
+    
+
+
+
+  
+  
+  
+}
