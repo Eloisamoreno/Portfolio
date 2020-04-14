@@ -196,6 +196,8 @@ blockquote{
             width: 72px;
             border-right: 1px solid;
             border-left: 1px solid;
+            border-top: none;
+            border-bottom: none;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -244,7 +246,7 @@ blockquote{
         right: 325px;
     }
     .gallery-wrap, footer {
-        width: calc(100% - 398px);
+        width: calc(100% - 408px);
     }
     .gallery-wrap {
         padding-top: 100px;
@@ -260,22 +262,24 @@ blockquote{
         position: fixed;
         top: 0;
         right: 0;
-        width: 325px;
+        width: 336px;
         height: 100%;
-        max-height: 492px;
         overflow-y: auto;
+        align-content: flex-start;
     }
     .home footer ul{
         flex-direction: column;
         border-top: 2px dashed #444;
         border-bottom: 2px dashed #444;
         padding: 6px 0;
+        width: 100%;
     }
     .home footer p {
         font-size: 18px;
     }
     .home footer blockquote {
         display: block;
+        max-height: 228px;
     }
 }
 
