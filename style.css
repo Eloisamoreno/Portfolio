@@ -277,6 +277,19 @@ quote{
 .proyect .detail{
     padding: 0 0 40px;
 }
+.proyect .detail svg{
+    width: 48px;
+    margin-right: 26px;
+    position: fixed;
+    bottom: 233px;
+    z-index: 4;
+    left: 68px;
+    transform: translateX(0px);
+}
+
+.proyect .detail svg:hover{
+    transform: translateX(-10px);
+}
 
 .proyect .detail b{
     display: block;
@@ -352,7 +365,7 @@ header {
     padding: 20px 20px;
     color: #333;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
+    padding: 0 4px;
   }
 
   header svg{
@@ -538,14 +551,14 @@ footer a:hover{
         padding: 0 30px;
       }
     .header li a {
-        padding: 0 0 8px;
+        padding: 0 4px 8px;
         border-right: none;
         font-size: 24px;
         text-transform: uppercase;
       }
       .header li a.active,
-      .header li a:hover {
-          border-bottom: 2px solid #333;
+      .header li a:hover {    
+        background: #00ffff94;;
       }
       .header .menu {
         max-height: none;
