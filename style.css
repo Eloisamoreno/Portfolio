@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
+    transition: all .25s ease;
 
 }
 html{
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    min-width: 383px;
+    min-width: 380px;
     font-weight: 300;
 }
 body{
@@ -43,7 +44,7 @@ ul{
 
 
 main{
-    padding: 156px 16px 132px;
+    padding: 170px 16px 132px;
     font-size: 17px;
     max-width: 1248px;
     margin: 0 auto;
@@ -65,17 +66,19 @@ main{
 
 .home main{
     justify-content: flex-end;
+    padding: 156px 16px 132px;
 }
 
 .home main .content{
     flex-direction: column;
     justify-content: space-between;
-    height: 540px;
-    position: absolute;
-    max-width: 407px;
-    padding: 0 115px 132px 16px;
-    margin-right: 6px;
-    left: 0;
+    height: 539px;
+    padding: 0 174px 18px 0px;
+    background-image: url("img/eloisa-portfoliov2.jpg");
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 315px;
+    background-repeat: no-repeat;
 }
 
 .home main img{
@@ -89,8 +92,8 @@ main{
 
 quote{
     font-size: 27px;
-    margin-top: 47px;
-    font-weight: 500px;
+    margin-top: 21px;
+    font-weight: 500;
 }
 
 
@@ -259,15 +262,15 @@ quote{
 }
 .proyect h2{
     font-size: 24px;
+    width: 100%;
 }
 .proyect h3{
     font-weight: 500;
     font-size: 24px;
+    margin-bottom: 8px;
 }
-.proyect h3 small{
-    font-weight: 300;
-    display: block;
-    font-size: 22px;
+.proyect h3 + p{
+    margin-top: 0;;
 }
 
 
@@ -286,7 +289,7 @@ quote{
 
 
 .proyect section{
-    margin-bottom: 56px;
+    margin-bottom: 88px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -294,31 +297,12 @@ quote{
 .proyect #maincontent {
     flex-direction: column;
 }
-.proyect-content {
-    padding-top: 46px;
-}
+
 .luna section:nth-child(3){
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-end;
-}
-
-.luna section:nth-child(3) img:nth-child(5),
-.luna section:nth-child(3) img:nth-child(6),
-.luna section:nth-child(3) img:nth-child(7),
-.luna section:nth-child(3) img:nth-child(8),
-.luna section:nth-child(3) img:nth-child(8){
-    width: 50%;
-}
-
-.luna section:nth-child(3) img:nth-child(5),
-.luna section:nth-child(3) img:nth-child(6){
-    padding-right: 6%;
-}
-.luna section:nth-child(3) img:nth-child(7),
-.luna section:nth-child(3) img:nth-child(8){
-    padding-left: 6%;
 }
 
 
@@ -340,7 +324,7 @@ quote{
 header {
     background-color: #fff;
     position: fixed;
-    height: 105px;
+    height: 80px;
     width: 100%;
     max-width: 1248px;
     margin: 0 auto;
@@ -368,14 +352,9 @@ header {
     padding: 20px 20px;
     color: #333;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
   }
-  
-  .header li a:hover,
-  .header .menu-btn:hover {
-    background-color: #f4f4f4;
-  }
-  
-  
+
   header svg{
     width: 176px;
     height: auto;
@@ -506,7 +485,7 @@ header {
 }
 .social a:hover{
     list-style: none;
-    font-size: 16px;
+    font-size: 22px;
     color:black;
     text-decoration: underline;
 }
@@ -535,7 +514,7 @@ footer{
     z-index: 1;
 }
 footer a {
-    font-size: 16px;
+    font-size: 18px;
     color:black;
     text-decoration: none;
 }
@@ -543,9 +522,12 @@ footer a:hover{
     color:black;
     text-decoration: underline;
 }
-  
-  
-
+@media (min-width: 466px) { 
+    quote{
+        font-size: 30px;
+        margin-top: 24px;
+    } 
+}
 
   @media (min-width: 536px) {
 
@@ -561,7 +543,8 @@ footer a:hover{
         font-size: 24px;
         text-transform: uppercase;
       }
-      .header li a.active {
+      .header li a.active,
+      .header li a:hover {
           border-bottom: 2px solid #333;
       }
       .header .menu {
@@ -574,14 +557,13 @@ footer a:hover{
       .header .menu-icon {
         display: none;
       }
-      main{
-        padding: 196px 16px 0;
-        
-    }
+
     .home main .content{
         max-width: 959px;
-        padding: 0 169px 132px 9%;
-        height: 718px;
+        padding: 0 169px 39px 40px;
+        margin: 0 auto;
+        height: 576px;
+        background-position-y: -4px;
         
     }
     .home main img{
@@ -596,32 +578,36 @@ footer a:hover{
     
     quote{
         font-size: 35px;
-        margin-top: 80px;
+        margin-top: 30px;
         display: block;
     }
-    .cartel section img {
-        width: 50%;
+    .proyect-content {
+        padding-top: 46px;
     }
-    .cartel section img:nth-child(even) {
-        padding-left: 16px;
-    }
-    .cartel section img:nth-child(odd) {
-        padding-right: 16px;
+    main{
+        padding: 220px 16px 132px;
     }
     
 
 
 }
 .garabato path{
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 5s linear forwards;
-  }
+    stroke-dasharray: 3500;
+    stroke-dashoffset: 3500;
+    animation: dash 5s infinite alternate;
+}
   
   @keyframes dash {
     to {
       stroke-dashoffset: 0;
     }
+  }
+
+
+  @media (min-width: 603px) {
+      .home main .content{
+            padding: 0 169px 39px 90px;
+      }
   }
 @media (min-width: 768px) {
     header{
@@ -631,19 +617,20 @@ footer a:hover{
         width: 300px;
     }
     .logo {
-        top: 36px;
-        left: 0px;
+        top: 24px;
+        left: -25px;
     }
     .garabato{
         opacity: 1;
     }
     main{
-        padding: 287px 16px 132px;
+        padding: 267px 16px 132px;
         font-size: 20px;
     }
-    .home main .content{
-        padding: 0 22% 132px 23%;
+    .home main{
+        padding: 179px 16px 132px;
     }
+
     .portfolio > p {
         font-size: 22px;
     }
@@ -662,9 +649,11 @@ footer a:hover{
     }
     .proyect-content {
         padding-top: 114px;
+        padding-right: 40px;
+        width: calc(100% - 255px);
     }
     .proyect .detail {
-        padding: 0 0 40px 27px;
+        padding: 0 0 40px 0;
         width: 255px;
         flex: none;
     }
@@ -684,21 +673,32 @@ footer a:hover{
     quote{
         font-size: 40px;
     }
+
+    .proyect img.img-pair{
+        width: 50%;
+    }
+
+    .proyect img.img-pair:nth-child(even) {
+        padding-left: 16px;
+    }
+    .proyect img.img-pair:nth-child(odd) {
+        padding-right: 16px;
+    }
 }
 
-@media (min-width: 912px) {
+@media (min-width: 870px) {
 
   
     .home main .content{
        
-        max-width: 100%;
-        padding: 0 28.3% 132px 22%;
-        height: 818px;
+        height: 582px;
+        background-position-x: 484px;
+        width: 818px;
         
     }
     .home main img{
         margin-right: calc(50% - 419px);
-        width: 408px;
+        width: 315px;
 
     }
     
@@ -707,15 +707,6 @@ footer a:hover{
     }
 }
 
-
-@media (min-width: 963px) {
-  
-    .home main .content{
-       
-        padding: 0 35% 132px 22%;
-        
-    }
-}
 
 @media (min-width: 1248px) {
     .portfolio > p {
