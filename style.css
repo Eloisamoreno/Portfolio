@@ -277,15 +277,16 @@ quote{
 .proyect .detail{
     padding: 0 0 40px;
 }
-.proyect .detail svg{
+.proyect .detail svg {
     width: 48px;
     margin-right: 26px;
     position: fixed;
-    bottom: 233px;
+    top: 114px;
     z-index: 4;
-    left: 68px;
+    left: 19px;
     transform: translateX(0px);
 }
+
 
 .proyect .detail svg:hover{
     transform: translateX(-10px);
@@ -597,6 +598,10 @@ footer a:hover{
     .proyect-content {
         padding-top: 46px;
     }
+    .proyect .detail svg {
+        top: 142px;
+        left: 19px;
+    }
     main{
         padding: 220px 16px 132px;
     }
@@ -669,6 +674,11 @@ footer a:hover{
         padding: 0 0 40px 0;
         width: 255px;
         flex: none;
+    }
+    .proyect .detail svg{
+        width: 48px;
+        top: 452px;
+        left: 68px;
     }
     .bio{
         flex-direction: row;
