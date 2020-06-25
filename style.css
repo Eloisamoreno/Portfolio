@@ -3,7 +3,7 @@
 
 }
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     position: relative;
     min-width: 383px;
     font-weight: 300;
@@ -638,7 +638,7 @@ footer a:hover{
     }
     main{
         padding: 287px 16px 132px;
-        font-size: 22px;
+        font-size: 20px;
     }
     .home main .content{
         padding: 0 22% 132px 23%;
