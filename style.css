@@ -388,7 +388,7 @@ header {
   
   .header .menu-icon {
     cursor: pointer;
-    padding: 28px 20px;
+    padding: 40px 20px;
     position: relative;
     user-select: none;
     z-index: 5;
@@ -401,6 +401,7 @@ header {
     position: relative;
     transition: background .2s ease-out;
     width: 18px;
+    transform: scale(2)
   }
   
   .header .menu-icon .navicon:before,
@@ -455,6 +456,7 @@ header {
   .header .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
     width: 45px;
+    transform: scale(1);
   }
   
   .header .menu-btn:checked ~ .menu-icon .navicon:before {
